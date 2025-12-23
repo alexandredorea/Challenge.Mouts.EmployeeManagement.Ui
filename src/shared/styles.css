@@ -1,0 +1,53 @@
+.page { max-width: 980px; margin: 24px auto; font-family: Arial, sans-serif; padding: 0 12px; }
+.card { display: grid; gap: 12px; padding: 16px; border: 1px solid #ddd; border-radius: 8px; }
+.card.wide { max-width: 820px; }
+
+.field { display: grid; gap: 6px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+input { padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+label { font-size: 12px; color: #333; }
+
+.btn { padding: 8px 12px; border: 1px solid #333; background: #333; color: #fff; border-radius: 6px; text-decoration: none; cursor: pointer; }
+.btn.secondary { background: #fff; color: #333; }
+.btn.danger { background: #8b0000; border-color: #8b0000; }
+
+.error { color: #b00020; }
+.hint { font-size: 12px; color: #666; margin: 8px 0; }
+.hint-row { display: flex; gap: 10px; align-items: center; margin-top: 6px; }
+
+.row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+
+.link { background: none; border: none; color: #0b63ce; cursor: pointer; padding: 0; }
+
+/* Tabela simples */
+.table { margin-top: 12px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+.thead, .trow { display: grid; grid-template-columns: 1.2fr 1.6fr 1fr 0.8fr 1.4fr; gap: 8px; padding: 10px; }
+.thead { background: #f5f5f5; font-weight: 700; }
+.trow { border-top: 1px solid #eee; }
+
+/* dropdown do manager */
+.dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  background: #fff;
+  border: 1px solid #ddd;
+  max-height: 220px;
+  overflow: auto;
+  z-index: 10;
+  border-radius: 6px;
+}
+
+.dropdown-item {
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.dropdown-item:hover { background: #f5f5f5; }
